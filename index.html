@@ -34,12 +34,14 @@
                     CSS, JavaScript e Java como prova de conceito para reforçar 
                     o conhecimentos aprendidos durante o curso. 
                 </p>
-                <div id="formulario-container">
-                    <form>
-                        <label for="email">Digite seu Email para receber novidades sobre o nosso site!</label>
-                        <input id="email" type="email" placeholder="ex: meuemail@gmail.com">
-                    </form>
-                </div>
+                <form action="https://httpbin.org/post" method="post" id="formulario-container">
+                    <div>
+                    <label for="email">Digite seu Email para receber novidades sobre o nosso site!</label>
+                    <input id="email" type="email" placeholder="ex: meuemail@gmail.com" name="email" required>
+                    <button>Manda Bala!</button>
+                    </div>
+                </form>
+
             </article>
             <div id="imagens">
                 <img src="https://lauraehallcom.files.wordpress.com/2023/04/computersunset.gif" height="auto" 
