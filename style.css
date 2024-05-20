@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    
+    background-image: url('./imagens/frutiger-aero-Leevi-Ahonen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Menu do site*/
+
+#menu{
+    display: flex;
+    align-items: center;
+
+    width: 800px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 25px;
+}
+
+#menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 30px;
+    gap: 5px;
+}
+
+/* botões */
+
+#botao-home{
+    font-family: 'Frutiger', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgb(50, 205, 50, 0.6), rgb(39, 161, 39, 0.6));
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#botao-sobre {
+    font-family: 'Frutiger', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgb(0, 206, 209, 0.6), rgb(8, 174, 177, 0.6));
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#botao-uniasselvi {
+    font-family: 'Frutiger', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgb(0, 0, 255, 0.6), rgb(7, 7, 194, 0.6));
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#botao-home:hover {
+    background: linear-gradient(to bottom, rgb(39, 161, 39, 0.4), rgb(50, 205, 50, 0.4));
+
+}
+
+#botao-sobre:hover {
+    background: linear-gradient(to bottom, rgb(8, 174, 177, 0.6), rgb(0, 206, 209, 0.6));
+
+}
+
+#botao-uniasselvi:hover {
+    background: linear-gradient(to bottom, rgb(7, 7, 194, 0.4), rgb(0, 0, 255, 0.4));
+
+}
+
+/* Body do site */
+
+
+#site{
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    background: transparent;
+}
+
+#body{
+   
+    margin-bottom: 100px;
+
+    width: 800px;
+    height: 1000px;
+    border-radius: 1%;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+
