@@ -35,46 +35,58 @@
                     CSS, JavaScript e Php como prova de conceito para reforçar 
                     o conhecimentos aprendidos durante o curso. 
                 </p>
-                <div class="formulario-container">
-                    <h3>Se registre para entrar na parte legal do site!</h3>
-                    <form method="post" action="">
-                        <div class="grupo-input">
+                <div class="container" id="signUp">
+                    <h1 class="form-title">Registre-se</h1>
+                    <form method="post" action="register.php">
+                        <div class="input-group">
                             <img src="./imagens/icones/user.svg">
-                            <input type="text" name="pNome" id="pNome" placeholder="ex: João">
-                            <label for="pNome">Primeiro Nome</label>
+                            <input type="text" name="fName" id="fName" placeholder="Nome" required>
+                            <label for="fname">Nome</label>
                         </div>
-                        <div class="grupo-input">
+                        <div class="input-group">
                             <img src="./imagens/icones/user.svg">
-                            <input type="text" name="sNome" id="sNome" placeholder="ex: Pedro">
-                            <label for="sNome">Sobrenome</label>
+                            <input type="text" name="lName" id="lName" placeholder="Sobrenome" required>
+                            <label for="fname">Sobrenome</label>
                         </div>
-                        <div class="grupo-input">
+                        <div class="input-group">
                             <img src="./imagens/icones/mail.svg">
-                            <input type="email" name="email" id="email" placeholder="ex: joao@gmail.com">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
                             <label for="email">Email</label>
                         </div>
-                        <div class="grupo-input">
+                        <div class="input-group">
                             <img src="./imagens/icones/lock.svg">
-                            <input type="password" name="senha" id="senha" placeholder="senha">
-                            <label for="senha">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="Senha" required>
+                            <label for="password">Senha</label>
                         </div>
-                        <button type="submit">Criar conta!</button>
+                        <input type="submit" class="btn" value="Sign Up" name="signUp">
                     </form>
-                    <h3>Já tem uma conta? Faça o login.</h3>
-                    <form>
-                        <div class="grupo-input">
-                            <img src="./imagens/icones/mail.svg">
-                            <input type="email" name="email" id="email" placeholder="ex: joao@gmail.com">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="grupo-input">
-                            <img src="./imagens/icones/lock.svg">
-                            <input type="password" name="senha" id="senha" placeholder="senha">
-                            <label for="senha">Senha</label>
-                        </div>
-                        <button>Login</button>
+                    <div class="links">
+                        <p>Já tem uma conta?</p>
+                        <button id="signInButton">Entre</button>
+                    </div>
+                </div>
 
+                <div class="container" id="signIn" style="display:none">
+                    <h1 class="form-title">Login</h1>
+                    <form method="post" action="register.php">
+
+                        <div class="input-group">
+                            <img src="./imagens/icones/mail.svg">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <img src="./imagens/icones/lock.svg">
+                            <input type="password" name="password" id="password" placeholder="Senha" required>
+                            <label for="password">Senha</label>
+                        </div>
+                        <input type="submit" class="btn" value="Sign In" name="signIn">
                     </form>
+
+                    <div class="links">
+                        <p>Não tem uma conta?</p>
+                        <button id="signUpButton">Registre-se</button>
+                    </div>
                 </div>
 
             </article>
