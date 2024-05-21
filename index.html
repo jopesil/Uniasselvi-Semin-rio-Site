@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniasselvi Site Projeto</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>    
     <div id="site">
@@ -34,13 +35,47 @@
                     CSS, JavaScript e Php como prova de conceito para reforçar 
                     o conhecimentos aprendidos durante o curso. 
                 </p>
-                <form action="https://httpbin.org/post" method="post" id="formulario-container">
-                    <div>
-                    <label for="email">Digite seu Email para receber novidades sobre o nosso site!</label>
-                    <input id="email" type="email" placeholder="ex: meuemail@gmail.com" name="email" required>
-                    <button>Manda Bala!</button>
-                    </div>
-                </form>
+                <div class="formulario-container">
+                    <h3>Se registre para entrar na parte legal do site!</h3>
+                    <form method="post" action="">
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/user.svg">
+                            <input type="text" name="pNome" id="pNome" placeholder="ex: João">
+                            <label for="pNome">Primeiro Nome</label>
+                        </div>
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/user.svg">
+                            <input type="text" name="sNome" id="sNome" placeholder="ex: Pedro">
+                            <label for="sNome">Sobrenome</label>
+                        </div>
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/mail.svg">
+                            <input type="email" name="email" id="email" placeholder="ex: joao@gmail.com">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/lock.svg">
+                            <input type="password" name="senha" id="senha" placeholder="senha">
+                            <label for="senha">Senha</label>
+                        </div>
+                        <button type="submit">Criar conta!</button>
+                    </form>
+                    <h3>Já tem uma conta? Faça o login.</h3>
+                    <form>
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/mail.svg">
+                            <input type="email" name="email" id="email" placeholder="ex: joao@gmail.com">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="grupo-input">
+                            <img src="./imagens/icones/lock.svg">
+                            <input type="password" name="senha" id="senha" placeholder="senha">
+                            <label for="senha">Senha</label>
+                        </div>
+                        <button>Login</button>
+
+                    </form>
+                </div>
 
             </article>
             <div id="imagens">
